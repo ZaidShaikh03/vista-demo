@@ -1926,7 +1926,7 @@ export const DummyData = [
     plot: 1,
     id: 1,
     points:
-      "681,24,813,91,803,113,835,140,836,534,757,558,677,572,616,559,565,548,583,542,582,151,582,116,610,100,593,78",
+      "573,161,604,144,643,125,681,104,764,130,793,146,838,175,837,533,790,541,757,547,726,551,679,554,644,547,601,541,570,535",
     type: "royce",
     color: "rgba(221, 177, 44, 0.5)",
     hoveredcolor: "rgba(221, 177, 44 ,0.2)",
@@ -1943,5 +1943,103 @@ export const DummyData = [
     isFront: true,
     isBack: false,
     filterType: "simplex",
+  },
+];
+
+export const SubDummyData = [
+  {
+    plot: 1,
+    id: 1,
+    points:
+      "575,224,601,213,644,199,678,186,761,207,789,213,837,231,838,246,791,229,776,225,760,221,677,204,644,217,604,231,575,240",
+    type: "winga",
+    color: "rgba(217, 217, 217, 0.72)",
+    strokborder: "rgba(217, 217, 217, 0.72)",
+    parentid: 1,
+    floorplanimg: floorplan29,
+    numText: "Garden View",
+    numSubText:
+      "Seating Plaza, Trellis Walkway, Outdoor Gym, Obstacle Park, Hammock Lawn",
+    floor: 20,
+    area: 7550,
+    pi: "801,362",
+    isFront: false,
+    isBack: true,
+  },
+  {
+    plot: 2,
+    id: 2,
+    points:
+      "575,240,604,230,646,217,677,204,760,220,790,227,837,244,837,259,791,243,761,237,679,221,644,233,605,246,575,255",
+    type: "winga",
+    color: "rgba(217, 217, 217, 0.72)",
+    strokborder: "rgba(217, 217, 217, 0.72)",
+    parentid: 1,
+    floorplanimg: floorplan29,
+    numText: "Garden View",
+    numSubText:
+      "Seating Plaza, Trellis Walkway, Outdoor Gym, Obstacle Park, Hammock Lawn",
+    floor: 19,
+    area: 7550,
+    pi: "801,362",
+    isFront: false,
+    isBack: true,
+  },
+  {
+    plot: 3,
+    id: 3,
+    points:
+      "575,256,605,246,644,233,678,221,761,237,791,243,838,259,837,272,789,257,760,251,679,238,644,248,603,260,575,269",
+    type: "winga",
+    color: "rgba(217, 217, 217, 0.72)",
+    strokborder: "rgba(217, 217, 217, 0.72)",
+    parentid: 1,
+    floorplanimg: floorplan29,
+    numText: "Garden View",
+    numSubText:
+      "Seating Plaza, Trellis Walkway, Outdoor Gym, Obstacle Park, Hammock Lawn",
+    floor: 18,
+    area: 7550,
+    pi: "801,362",
+    isFront: false,
+    isBack: true,
+  },
+  {
+    plot: 4,
+    id: 4,
+    points:
+      "575,268,604,261,646,248,678,238,763,251,793,259,837,272,837,285,787,272,764,268,681,256,644,266,603,277,575,285",
+    type: "winga",
+    color: "rgba(217, 217, 217, 0.72)",
+    strokborder: "rgba(217, 217, 217, 0.72)",
+    parentid: 1,
+    floorplanimg: floorplan29,
+    numText: "Garden View",
+    numSubText:
+      "Seating Plaza, Trellis Walkway, Outdoor Gym, Obstacle Park, Hammock Lawn",
+    floor: 17,
+    area: 7550,
+    pi: "801,362",
+    isFront: false,
+    isBack: true,
+  },
+  {
+    plot: 5,
+    id: 5,
+    points:
+      "572,283,605,277,646,264,679,256,759,268,787,272,838,285,837,298,789,286,759,282,679,273,644,282,603,292,572,299",
+    type: "winga",
+    color: "rgba(217, 217, 217, 0.72)",
+    strokborder: "rgba(217, 217, 217, 0.72)",
+    parentid: 1,
+    floorplanimg: floorplan29,
+    numText: "Garden View",
+    numSubText:
+      "Seating Plaza, Trellis Walkway, Outdoor Gym, Obstacle Park, Hammock Lawn",
+    floor: 16,
+    area: 7550,
+    pi: "801,362",
+    isFront: false,
+    isBack: true,
   },
 ];

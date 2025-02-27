@@ -20,7 +20,7 @@ import "./WingDetail.css";
 import ImageLoader from "./Loader/ImageLoader";
 import { pageFlowData } from "../utils/pageFlowData";
 
-import { DummyData } from "../utils/royceoneDatavalues";
+import { DummyData, SubDummyData } from "../utils/royceoneDatavalues";
 
 export default function NewDummy() {
   //   const { wing } = useParams();
@@ -155,7 +155,7 @@ export default function NewDummy() {
     return wingTypeMatch;
   });
 
-  const groupedItemsFloors = groupByParentId(WingData.polygonsubdata);
+  const groupedItemsFloors = groupByParentId(SubDummyData);
 
   const handleOutsideClick = (event) => {
     if (
@@ -247,7 +247,7 @@ export default function NewDummy() {
         ? menuOffsetY + 10
         : hoveredIndex === 1
         ? menuOffsetY + 55
-        : menuOffsetY + 20;
+        : menuOffsetY + 85;
 
     setMenuPosition({ x: cx, y: menuOffsetYMain });
   };
@@ -768,10 +768,10 @@ export default function NewDummy() {
                               </foreignObject>
                               <foreignObject
                                 key={index}
-                                x={cx - getScaledSize(340)}
-                                y={menuPosition.y - 50}
-                                width={220}
-                                height={100}
+                                x={cx - getScaledSize(270)}
+                                y={menuPosition.y - 100}
+                                width={150}
+                                height={50}
                                 style={{
                                   overflow: "visible",
                                   zIndex: 10,
@@ -782,7 +782,7 @@ export default function NewDummy() {
                                     display: "flex",
                                     flexDirection: "column",
                                     backgroundColor: "#2B2B2B",
-                                    padding: "25px",
+                                    padding: "15px",
                                     borderRadius: "18px",
                                     color: "white",
                                     position: "relative",
@@ -805,7 +805,7 @@ export default function NewDummy() {
 
                                   <Typography
                                     variant="body2"
-                                    sx={{ fontSize: "22px" }}
+                                    sx={{ fontSize: "15px" }}
                                   >
                                     2 Units Total
                                   </Typography>
@@ -815,7 +815,7 @@ export default function NewDummy() {
                                       color: "black",
                                       width: "100%",
                                       borderRadius: "10px",
-                                      fontSize: "20px",
+                                      fontSize: "12px",
                                       textTransform: "capitalize",
                                     }}
                                   >
@@ -935,11 +935,11 @@ const Landmarkforeignobjectcss = {
 
 const hoverespinLandmarkcss = (getScaledSize, item) => ({
   color: "white",
-  fontSize: `30px`,
+  fontSize: `20px`,
   fontWeight: "bold",
   fontFamily: "Segoeui",
   background: item.color,
   borderRadius: `${getScaledSize(8)}px`,
-  padding: `${getScaledSize(9)}px ${getScaledSize(17)}px`,
+  padding: `${getScaledSize(3)}px ${getScaledSize(12)}px`,
   width: "fit-content",
 });
