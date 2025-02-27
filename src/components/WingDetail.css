@@ -1,0 +1,15 @@
+.box-with-arrow {
+    position: relative;
+    padding-right: 10px; /* Add space for the arrow */
+  }
+  
+  .box-with-arrow::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid ; /* Arrow pointing left */
+  }

@@ -1,0 +1,43 @@
+
+  .inner-circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid white; /* Transparent border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3.142857074737549px)
+
+  }
+  
+  .outer-circle {
+    position: relative;
+    /* Transparent border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Larger transparent circle */
+    backdrop-filter: blur(3.142857074737549px);
+
+  }
+  
+  .text {
+    text-align: center;
+    color: white;
+  }
+  
+  .text h1 {
+    font-size: 38px;
+    margin: 0;
+  }
+  
+  .text p {
+    font-size: 14px;
+    margin: 10px 0 0 0;
+  }
+  

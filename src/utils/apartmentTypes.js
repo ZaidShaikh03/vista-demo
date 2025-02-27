@@ -1,0 +1,15 @@
+export const APARTMENTTYPESENUM = {
+  ONE_BHK_1T_TYPE_1: "1BHK + 1T - Type 1",
+  ONE_BHK_1T_TYPE_2: "1BHK + 1T - Type 2",
+  TWO_BHK_2T_TYPE_1: "2BHK + 2T - Type 1",
+  TWO_BHK_2T_TYPE_2: "2BHK + 2T - Type 2",
+  TWO_BHK_2T_TYPE_3: "2BHK + 2T - Type 3",
+  TWO_BHK_2T_TYPE_4: "2BHK + 2T - Type 4",
+  THREE_BHK_2T_TYPE_1: "3BHK + 2T - Type 1",
+  THREE_BHK_2T_TYPE_2: "3BHK + 2T - Type 2",
+  THREE_BHK_2T_TYPE_3: "3BHK + 2T - Type 3",
+  THREE_BHK_3T_TYPE_1: "3BHK + 3T - Type 1",
+  THREE_BHK_3T_TYPE_2: "3BHK + 3T - Type 2",
+  THREE_BHK_3T_TYPE_3: "3BHK + 3T - Type 3",
+  STUDIO_APARTMENT: "Studio Apartment",
+};

@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install -f
+
+  build:
+    commands:
+      - echo "running the build"
+      - yarn build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - cp appspec.yml dist/
+      - cp -r script dist/
+artifacts:
+  files:
+    - dist/**/*

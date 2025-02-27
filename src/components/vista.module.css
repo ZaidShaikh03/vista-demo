@@ -1,0 +1,85 @@
+.mainContainer {
+  flex-direction: column;
+}
+
+.imageMapContainer {
+  position: relative;
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.imageMap {
+  display: block;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.svgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+  -webkit-tap-highlight-color: transparent; /* Disable the tap highlight */
+  outline: none; /* Ensure no outline is shown */
+}
+
+/* Media Queries for Tablet Portrait Mode (max-width: 1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+  .mainContainer {
+    flex-direction: row;
+  }
+  .imageMapContainer {
+    width: auto;
+    height: 100vh;
+    overflow: auto;
+    overflow-y: hidden; /* Disable vertical scroll */
+  }
+  .imageMap {
+    width: auto; /* Make image width auto so it can scroll horizontally */
+    height: 100vh; /* Ensure it takes full height */
+  }
+  .svgOverlay {
+    width: auto; /* Match width with the image */
+    height: 100vh; /* Match height with the image */
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .imageMapContainer {
+    width: auto;
+    height: 100vh;
+    overflow: auto;
+  }
+  .imageMap {
+    width: auto;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .mainContainer {
+    flex-direction: row;
+  }
+  .imageMapContainer {
+    width: auto;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .imageMap {
+    width: auto;
+    height: 100vh;
+  }
+  .svgOverlay {
+    width: auto;
+    height: 100vh;
+  }
+}

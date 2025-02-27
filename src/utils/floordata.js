@@ -1,0 +1,51 @@
+export const floorplaladmarkdata = [
+  {
+    id: 1,
+    type: "Verandah",
+    title: "Verandah",
+    color: "black",
+    points: "340,620",
+  },
+  {
+    id: 2,
+    type: "Kitchen  & Dining",
+    title: "Kitchen  & Dining",
+    color: "black",
+    points: "774,400",
+  },
+  {
+    id: 3,
+    type: "Bedroom",
+    title: "Bedroom",
+    color: "black",
+    points: "497,407",
+  },
+  {
+    id: 4,
+    type: "Private Lawn",
+    title: "Private Lawn",
+    color: "black",
+    points: "1120,520",
+  },
+  //   {
+  //     id: 5,
+  //     type: "Bedroom 2",
+  //     title: "Bedroom 2",
+  //     color: "black",
+  //     points: "750,826",
+  //   },
+  {
+    id: 6,
+    type: "Living area",
+    title: "Living area",
+    color: "black",
+    points: "739,606",
+  },
+  {
+    id: 7,
+    type: "Parking",
+    title: "Parking",
+    color: "black",
+    points: "671,895",
+  },
+];
