@@ -196,7 +196,7 @@ const MainRoutes = createBrowserRouter([
         element: <RoycelOne />,
       },
       {
-        path: "/roycelthree",
+        path: "/dummy",
         element: <NewDummy />,
       },
     ],
