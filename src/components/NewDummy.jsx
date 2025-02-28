@@ -112,22 +112,16 @@ export default function NewDummy() {
     }
 
     const typeMatch = mapfiltervalue.includes(landMark.filterType);
-    const wingname = "wing";
-
-    const resultwing = "royce";
-
-    // console.log("result", resultwing);
-    const wingTypeMatch = resultwing === landMark.type;
 
     // console.log("landmakr", landMark.isFront, "L", landMark.isBack);
 
     // console.log("Type Match: ", typeMatch);
 
-    return typeMatch && wingTypeMatch;
+    return typeMatch;
   });
 
   //   const groupedItems = groupByParentId(filteredData);
-  const groupedItems = groupByParentId(DummyData);
+  const groupedItems = groupByParentId(filteredData);
 
   // const groupedItemsFloors = groupByParentId(
   //   Sattvaluminasubdatafloors.filter(

@@ -829,6 +829,80 @@ function MapFilters({
                   </Button>
                 </motion.div>
               </>
+            ) : location.pathname === "/dummy" ? (
+              <>
+                <motion.div
+                  animate={{
+                    filter: !mapfiltervalue?.includes("simplex")
+                      ? "grayscale(1)"
+                      : "grayscale(0)",
+                    backgroundColor: mapfiltervalue?.includes("simplex")
+                      ? "rgba(226, 190, 116, 1)"
+                      : mapfilterstyled?.btnbg,
+                  }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                  <Button
+                    onClick={() => handleMapFilterChange("simplex")}
+                    sx={{
+                      color: mapfiltervalue?.includes("simplex")
+                        ? "black"
+                        : "#bdbdbd",
+                      "&:hover": {
+                        color: "black",
+
+                        background: mapfiltervalue?.includes("simplex")
+                          ? lighten("rgba(226, 190, 116, 1)", 0.2)
+                          : "#616161",
+                        borderRadius: mapfilterstyled?.borderRadiusForButton1,
+                      },
+                      transition: "all 0.5s",
+
+                      ...textStyle(Location),
+                    }}
+                    disabled={!pinPointsVisible && location?.pathname !== "/"}
+                  >
+                    <Typography sx={textStyle(Location)}>
+                      Skyview Suite (5BHK)
+                    </Typography>
+                  </Button>
+                </motion.div>
+
+                <motion.div
+                  animate={{
+                    filter: !mapfiltervalue?.includes("triplex")
+                      ? "grayscale(1)"
+                      : "grayscale(0)",
+                    backgroundColor: mapfiltervalue?.includes("triplex")
+                      ? "rgba(226, 190, 116, 1)"
+                      : mapfilterstyled?.btnbg,
+                  }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                  <Button
+                    onClick={() => handleMapFilterChange("triplex")}
+                    sx={{
+                      color: mapfiltervalue?.includes("triplex")
+                        ? "black"
+                        : "#bdbdbd",
+                      "&:hover": {
+                        color: "black",
+                        background: mapfiltervalue?.includes("triplex")
+                          ? lighten("rgba(226, 190, 116, 1)", 0.2)
+                          : "#616161",
+                        borderRadius: mapfilterstyled?.borderRadiusForButton3,
+                      },
+
+                      ...textStyle(Location),
+                    }}
+                    disabled={!pinPointsVisible && location?.pathname !== "/"}
+                  >
+                    <Typography sx={textStyle(Location)}>
+                      Penthouse Triplex (6BHK)
+                    </Typography>
+                  </Button>
+                </motion.div>
+              </>
             ) : (
               <>
                 <motion.div

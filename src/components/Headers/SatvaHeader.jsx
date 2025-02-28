@@ -962,6 +962,17 @@ function SatvaHeader({
               </Button>
             )}
 
+            {Location === "/dummy" && (
+              <Button
+                sx={shelatypo}
+                onClick={() => {
+                  navigate("/dummy");
+                }}
+              >
+                New Route
+              </Button>
+            )}
+
             {Location === "/roycefloorplan" && (
               <Button
                 sx={shelatypo}
@@ -1012,6 +1023,7 @@ function SatvaHeader({
               Location !== "/sanand" &&
               Location !== "/sattvalumina" &&
               Location !== "/roycelone" &&
+              Location !== "/dummy" &&
               Location !== "/roycefloorplan" &&
               !Location.startsWith("/sattvalumina/") &&
               Location !== "/floorplan" &&
@@ -1031,6 +1043,7 @@ function SatvaHeader({
             {Location !== "/roseate" &&
               Location !== "/sanand" &&
               Location !== "/roycelone" &&
+              Location !== "/dummy" &&
               Location !== "/roycefloorplan" &&
               Location !== "/sattvalumina" &&
               !Location.startsWith("/sattvalumina/") &&
@@ -1161,6 +1174,7 @@ function SatvaHeader({
                 {Location.startsWith("/sattvalumina/") ||
                 Location === "/floorplan" ||
                 Location === "/roycefloorplan" ||
+                Location === "/dummy" ||
                 Location === "/roycelone" ? (
                   <>
                     <Button sx={showallbuttoncss} onClick={handlemapwingdetail}>
@@ -1530,6 +1544,7 @@ function SatvaHeader({
                       {Location.startsWith("/sattvalumina/") ||
                       Location === "/floorplan" ||
                       Location === "/roycefloorplan" ||
+                      Location === "/dummy" ||
                       Location === "/roycelone" ? (
                         <>
                           <Button
@@ -2032,6 +2047,7 @@ function SatvaHeader({
 
                                 {Location !== "/sanand" &&
                                   Location !== "/roycelone" &&
+                                  Location !== "/dummy" &&
                                   Location !== "/view360" &&
                                   Location !== "/roycefloorplan" && (
                                     <>
@@ -2049,6 +2065,7 @@ function SatvaHeader({
 
                                 {Location !== "/roycelone" &&
                                   Location !== "/sanand" &&
+                                  Location !== "/dummy" &&
                                   Location !== "/roseate" &&
                                   Location !== "/floorplan" && (
                                     <>
@@ -2067,6 +2084,7 @@ function SatvaHeader({
                                 {Location !== "/roycefloorplan" &&
                                   Location !== "/sanand" &&
                                   Location !== "/roycelone" &&
+                                  Location !== "/dummy" &&
                                   Location !== "/roseate" &&
                                   Location !== "/floorplan" && (
                                     <>
@@ -2088,6 +2106,7 @@ function SatvaHeader({
                                 {Location !== "/sanand" &&
                                   Location !== "/roseate" &&
                                   Location !== "/roycelone" &&
+                                  Location !== "/dummy" &&
                                   Location !== "/view360" &&
                                   Location !== "/roycefloorplan" && (
                                     <>
@@ -2151,6 +2170,7 @@ function SatvaHeader({
                                   Location !== "/sanand" &&
                                   Location !== "/sattvalumina" &&
                                   Location !== "/roycelone" &&
+                                  Location !== "/dummy" &&
                                   Location !== "/roycefloorplan" &&
                                   Location !== "/view360" &&
                                   !Location.startsWith("/sattvalumina/") &&
@@ -2174,6 +2194,7 @@ function SatvaHeader({
                                 {Location !== "/roseate" &&
                                   Location !== "/sanand" &&
                                   Location !== "/roycelone" &&
+                                  Location !== "/dummy" &&
                                   Location !== "/sattvalumina" &&
                                   !Location.startsWith("/sattvalumina/") &&
                                   Location !== "/floorplan" &&
@@ -2220,6 +2241,14 @@ function SatvaHeader({
                             <>
                               <Button sx={textActive} onClick={handleroyceone}>
                                 Sky Royale
+                              </Button>
+                            </>
+                          )}
+
+                          {Location === "/dummy" && (
+                            <>
+                              <Button sx={textActive} onClick={handleroyceone}>
+                                New Route
                               </Button>
                             </>
                           )}
@@ -3091,6 +3120,7 @@ function SatvaHeader({
                     Location.startsWith("/sattvalumina/") ||
                     Location === "/floorplan" ||
                     Location === "/roycelone" ||
+                    Location === "/dummy" ||
                     Location === "/roycefloorplan" ||
                     Location === "/sanand" ? null : (
                       <Box sx={percentagebox}>
@@ -3152,6 +3182,7 @@ function SatvaHeader({
 
                 {Location === "/sattvalumina" ||
                 Location === "/roycelone" ||
+                Location === "/dummy" ||
                 Location.startsWith("/sattvalumina/") ? (
                   <>
                     <Box sx={mapdatamainbox(data1)}>
