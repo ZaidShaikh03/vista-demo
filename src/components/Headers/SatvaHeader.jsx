@@ -970,7 +970,7 @@ function SatvaHeader({
                   navigate("/dummy");
                 }}
               >
-                New Route
+                Sky Royale
               </Button>
             )}
 
@@ -2249,7 +2249,7 @@ function SatvaHeader({
                           {Location === "/dummy" && (
                             <>
                               <Button sx={textActive} onClick={handleroyceone}>
-                                New Route
+                                Sky Royale
                               </Button>
                             </>
                           )}
