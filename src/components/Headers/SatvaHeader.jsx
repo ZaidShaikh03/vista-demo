@@ -21,6 +21,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import FullScreenIcon from "../../assets/full-screen-icon.svg";
 import FullScreenIconToogle from "../../assets/fullscreentoogle.svg";
 import AldarLogo from "../../assets/dubai-img-2.png";
+import AldarLogo2 from "../../assets/dubai-logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import LocationFilter from "./LocationFilter";
@@ -1934,7 +1935,7 @@ function SatvaHeader({
                   }}
                 >
                   <img
-                    src={AldarLogo}
+                    src={Location === "/dummy" ? AldarLogo2 : AldarLogo}
                     onClick={() => navigate("/")}
                     style={{ width: "50px" }}
                   />

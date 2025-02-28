@@ -1761,10 +1761,10 @@ export const SobhaData = [
     points:
       "1367,462,1413,446,1441,450,1458,459,1456,1190,1433,1199,1399,1185,1367,1170",
     type: "royce",
-    color: "rgba(221, 177, 44, 0.5)",
-    hoveredcolor: "rgba(221, 177, 44 ,0.2)",
+    color: "rgba(250,119,174,0.5)",
+    hoveredcolor: "rgba(250,119,174,0.2)",
 
-    strokborder: "rgba(221, 177, 44,1)",
+    strokborder: "rgba(250,119,174,1)",
     area: 7550,
     isNear: 800,
     pi: "801,362",
@@ -1783,10 +1783,10 @@ export const SobhaData = [
     points:
       "1458,459,1478,448,1507,442,1547,448,1576,462,1573,1182,1544,1191,1513,1205,1484,1202,1456,1188",
     type: "royce",
-    color: "rgba(221, 177, 44, 0.5)",
-    hoveredcolor: "rgba(221, 177, 44 ,0.2)",
+    color: "rgba(228,105,36,0.5)",
+    hoveredcolor: "rgba(228,105,36,0.2)",
 
-    strokborder: "rgba(221, 177, 44,1)",
+    strokborder: "rgba(228,105,36,1)",
     area: 7550,
     isNear: 800,
     pi: "801,362",
@@ -1805,6 +1805,7 @@ export const SobhaData = [
     points:
       "1576,462,1596,459,1635,474,1635,1154,1613,1174,1601,1182,1573,1182",
     type: "royce",
+
     color: "rgba(221, 177, 44, 0.5)",
     hoveredcolor: "rgba(221, 177, 44 ,0.2)",
 
@@ -1928,10 +1929,10 @@ export const DummyData = [
     points:
       "573, 161, 604, 144, 643, 125, 681, 104, 680, 165, 680, 238, 678, 439, 678, 455, 679, 465, 679, 488, 679, 529, 679, 554, 644, 547, 601, 541, 570, 535",
     type: "royce",
-    color: "rgba(221, 177, 44, 0.5)",
-    hoveredcolor: "rgba(221, 177, 44 ,0.2)",
+    color: "rgba(225, 174, 73,0.5)",
+    hoveredcolor: "rgba(225, 174, 73,0.2)",
 
-    strokborder: "rgba(221, 177, 44,1)",
+    strokborder: "rgba(225, 174, 73,1)",
     area: 7550,
     isNear: 800,
     pi: "801,362",
@@ -1950,10 +1951,10 @@ export const DummyData = [
     points:
       "840, 177, 811, 157, 761, 131, 681, 104, 680, 165, 680, 238, 678, 439, 678, 455, 679, 465, 679, 488, 679, 529, 679, 554, 730, 550, 792, 542, 842, 533",
     type: "royce",
-    color: "rgba(221, 177, 44, 0.5)",
-    hoveredcolor: "rgba(221, 177, 44 ,0.2)",
+    color: "rgba(228,105,36,0.5)",
+    hoveredcolor: "rgba(228,105,36,0.2)",
 
-    strokborder: "rgba(221, 177, 44,1)",
+    strokborder: "rgba(228,105,36,1)",
     area: 7550,
     isNear: 800,
     pi: "801,362",

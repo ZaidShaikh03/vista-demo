@@ -728,7 +728,7 @@ function MapFilters({
                       ? "grayscale(1)"
                       : "grayscale(0)",
                     backgroundColor: mapfiltervalue?.includes("simplex")
-                      ? "rgba(226, 190, 116, 1)"
+                      ? "rgba(250,119,174,1)"
                       : mapfilterstyled?.btnbg,
                   }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -743,7 +743,7 @@ function MapFilters({
                         color: "black",
 
                         background: mapfiltervalue?.includes("simplex")
-                          ? lighten("rgba(226, 190, 116, 1)", 0.2)
+                          ? lighten("rgba(250,119,174,1)", 0.2)
                           : "#616161",
                         borderRadius: mapfilterstyled?.borderRadiusForButton1,
                       },
@@ -764,7 +764,7 @@ function MapFilters({
                       ? "grayscale(1)"
                       : "grayscale(0)",
                     backgroundColor: mapfiltervalue?.includes("duplex")
-                      ? "rgba(226, 190, 116, 1)"
+                      ? "rgba(228,105,36,1)"
                       : mapfilterstyled?.btnbg,
                   }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -779,9 +779,9 @@ function MapFilters({
                         color: "black",
 
                         background: mapfiltervalue?.includes("duplex")
-                          ? lighten("rgba(226, 190, 116, 1)", 0.2)
+                          ? lighten("rgba(228,105,36,1)", 0.2)
                           : "#616161",
-                        borderRadius: mapfilterstyled?.borderRadiusForButton1,
+                        // borderRadius: mapfilterstyled?.borderRadiusForButton1,
                       },
                       transition: "all 0.5s",
 
@@ -800,7 +800,7 @@ function MapFilters({
                       ? "grayscale(1)"
                       : "grayscale(0)",
                     backgroundColor: mapfiltervalue?.includes("triplex")
-                      ? "rgba(226, 190, 116, 1)"
+                      ? "rgba(221, 177, 44,1)"
                       : mapfilterstyled?.btnbg,
                   }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -814,7 +814,7 @@ function MapFilters({
                       "&:hover": {
                         color: "black",
                         background: mapfiltervalue?.includes("triplex")
-                          ? lighten("rgba(226, 190, 116, 1)", 0.2)
+                          ? lighten("rgba(221, 177, 44,1)", 0.2)
                           : "#616161",
                         borderRadius: mapfilterstyled?.borderRadiusForButton3,
                       },
@@ -837,7 +837,7 @@ function MapFilters({
                       ? "grayscale(1)"
                       : "grayscale(0)",
                     backgroundColor: mapfiltervalue?.includes("simplex")
-                      ? "rgba(226, 190, 116, 1)"
+                      ? "rgba(225, 174, 73,1)"
                       : mapfilterstyled?.btnbg,
                   }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -852,7 +852,7 @@ function MapFilters({
                         color: "black",
 
                         background: mapfiltervalue?.includes("simplex")
-                          ? lighten("rgba(226, 190, 116, 1)", 0.2)
+                          ? lighten("rgba(225, 174, 73,1)", 0.2)
                           : "#616161",
                         borderRadius: mapfilterstyled?.borderRadiusForButton1,
                       },
@@ -874,7 +874,7 @@ function MapFilters({
                       ? "grayscale(1)"
                       : "grayscale(0)",
                     backgroundColor: mapfiltervalue?.includes("triplex")
-                      ? "rgba(226, 190, 116, 1)"
+                      ? "rgba(228,105,36,1)"
                       : mapfilterstyled?.btnbg,
                   }}
                   transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -888,7 +888,7 @@ function MapFilters({
                       "&:hover": {
                         color: "black",
                         background: mapfiltervalue?.includes("triplex")
-                          ? lighten("rgba(226, 190, 116, 1)", 0.2)
+                          ? lighten("rgba(228,105,36,1)", 0.2)
                           : "#616161",
                         borderRadius: mapfilterstyled?.borderRadiusForButton3,
                       },

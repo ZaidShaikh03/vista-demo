@@ -241,7 +241,7 @@ export default function NewDummy() {
         ? menuOffsetY + 10
         : hoveredIndex === 1
         ? menuOffsetY + 55
-        : menuOffsetY + 85;
+        : menuOffsetY + 100;
 
     setMenuPosition({ x: cx, y: menuOffsetYMain });
   };
@@ -762,9 +762,9 @@ export default function NewDummy() {
                               </foreignObject>
                               <foreignObject
                                 key={index}
-                                x={cx - getScaledSize(270)}
+                                x={cx - getScaledSize(230)}
                                 y={menuPosition.y - 100}
-                                width={150}
+                                width={125}
                                 height={50}
                                 style={{
                                   overflow: "visible",
@@ -776,8 +776,8 @@ export default function NewDummy() {
                                     display: "flex",
                                     flexDirection: "column",
                                     backgroundColor: "#2B2B2B",
-                                    padding: "15px",
-                                    borderRadius: "18px",
+                                    padding: "10px",
+                                    borderRadius: "10px",
                                     color: "white",
                                     position: "relative",
                                     zIndex: 7,
@@ -786,7 +786,7 @@ export default function NewDummy() {
                                     // display: "grid",
                                     alignItems: "center",
                                     justifyContent: "center",
-                                    gap: "1rem",
+                                    gap: "0.5rem",
                                   }}
                                 >
                                   <div
@@ -799,7 +799,7 @@ export default function NewDummy() {
 
                                   <Typography
                                     variant="body2"
-                                    sx={{ fontSize: "15px" }}
+                                    sx={{ fontSize: "11px" }}
                                   >
                                     2 Units Total
                                   </Typography>
@@ -809,7 +809,7 @@ export default function NewDummy() {
                                       color: "black",
                                       width: "100%",
                                       borderRadius: "10px",
-                                      fontSize: "12px",
+                                      fontSize: "10px",
                                       textTransform: "capitalize",
                                     }}
                                   >
@@ -929,11 +929,11 @@ const Landmarkforeignobjectcss = {
 
 const hoverespinLandmarkcss = (getScaledSize, item) => ({
   color: "white",
-  fontSize: `20px`,
+  fontSize: `17px`,
   fontWeight: "bold",
   fontFamily: "Segoeui",
   background: item.color,
   borderRadius: `${getScaledSize(8)}px`,
-  padding: `${getScaledSize(3)}px ${getScaledSize(12)}px`,
+  padding: `${getScaledSize(2)}px ${getScaledSize(11)}px`,
   width: "fit-content",
 });
